@@ -26,12 +26,30 @@ app.get('/users',function(req,res){
 	})
 })
 
+app.get('/users/:id',function(req,res){
+	console.log(req.params.id)
+	res.json({
+		success: true,
+		message: 'got one user',
+		user: req.params.id
+	})
+})
+
 // Stock Route
 app.get('/stock', function(req, res) {
     res.json({
         success: true,
         message: "Stock Availability",
         stock: stockAvailability
+    })
+})
+
+app.get('/stock/:id', function(req, res) {
+    console.log(req.params.id)
+    res.json({
+        success: true,
+        message: "Stock for one part",
+        stock: req.params.id
     })
 })
 
