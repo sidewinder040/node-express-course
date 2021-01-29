@@ -6,7 +6,7 @@ const mockUserData=[
 	{name:'Jill'}
 ]
 
-// My Stock Data
+// My Stock Data.
 const stockAvailability=[
     {
         part: '47000',
