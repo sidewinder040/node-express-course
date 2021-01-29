@@ -6,6 +6,7 @@ const mockUserData=[
 	{name:'Jill'}
 ]
 
+// My Stock Data
 const stockAvailability=[
     {
         part: '47000',
@@ -25,6 +26,7 @@ app.get('/users',function(req,res){
 	})
 })
 
+// Stock Route
 app.get('/stock', function(req, res) {
     res.json({
         success: true,
